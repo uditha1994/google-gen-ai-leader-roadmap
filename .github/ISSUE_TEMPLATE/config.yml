@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Official exam guide
+    url: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf
+    about: What the exam actually covers, straight from Google.
+  - name: Official sample questions
+    url: https://forms.gle/soztS7Q74AXBncATA
+    about: Free practice questions, untimed and unlimited attempts.
+  - name: Learning path on Google Skills
+    url: https://www.skills.google/paths/1951
+    about: The five courses this roadmap follows.

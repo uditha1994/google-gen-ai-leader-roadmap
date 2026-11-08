@@ -1,0 +1,43 @@
+name: Stage progress
+description: Track one stage of the roadmap from start to finish
+title: "[Stage N] <stage name>"
+labels: ["stage"]
+body:
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      options:
+        - Stage 0 - Set up and baseline
+        - Stage 1 - Gen AI - Beyond the Chatbot
+        - Stage 2 - Gen AI - Unlock Foundational Concepts
+        - Stage 3 - Gen AI - Navigate the Landscape
+        - Stage 4 - Gen AI Apps - Transform Your Work
+        - Stage 5 - Gen AI Agents - Transform Your Organization
+        - Stage 6 - Exam readiness
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: steps
+    attributes:
+      label: Steps
+      options:
+        - label: Course watched on Google Skills
+        - label: Every topic in the stage file ticked
+        - label: Explained the main ideas out loud without notes
+        - label: Self test completed
+        - label: Wrong answers logged as weak topics
+        - label: PROGRESS.md updated
+
+  - type: input
+    id: score
+    attributes:
+      label: Self test score
+      placeholder: "6 / 8"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: What was hard, what clicked, what to come back to.
