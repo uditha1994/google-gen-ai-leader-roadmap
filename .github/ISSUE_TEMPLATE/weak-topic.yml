@@ -1,0 +1,45 @@
+name: Weak topic
+description: Log a topic you got wrong, so it does not get forgotten
+title: "[Weak] <topic>"
+labels: ["weak-topic"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: "Grounding versus fine-tuning"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Exam section
+      options:
+        - 1 - Fundamentals of gen AI
+        - 2 - Google Cloud's gen AI offerings
+        - 3 - Techniques to improve model output
+        - 4 - Business strategies
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What I got wrong
+      description: Write the question and the answer you picked.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: The correct understanding
+      description: In your own words, not copied from the notes.
+
+  - type: checkboxes
+    id: cleared
+    attributes:
+      label: Cleared
+      options:
+        - label: Answered correctly twice on later attempts
