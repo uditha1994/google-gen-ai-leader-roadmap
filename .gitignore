@@ -1,0 +1,20 @@
+# Course material that should not be published
+*.pptx
+*.potx
+*.key
+/private/
+/program-files/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch notes you do not want public
+scratch.md
+notes-private.md
